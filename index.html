@@ -205,6 +205,145 @@
           
           
             
+              <a class="post-title-link" href="/2015/09/06/2015年阿里面试记录/" itemprop="url">
+                2015年阿里面试记录
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-09-06T19:57:27+08:00" content="2015-09-06">
+            2015-09-06
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/面试/" itemprop="url" rel="index">
+                  <span itemprop="name">面试</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/09/06/2015年阿里面试记录/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/06/2015年阿里面试记录/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>我参加2015年阿里巴巴校招的内推面试拿到Java研发工程师的offer，运气比较好的是恰好发offer的时候还没有通知缩招，所以拿到offer大部分靠运气吧。在这里主要是记录一下内推阿里面试的一些问题，据说明年阿里的校招会更加的凶残，可能面试会更加严格。</p>
+<p>今年阿里的面试比较多，基本上都是4-6轮，我恰好是算多的，<strong>三轮部门技术面+一轮HR面+两轮交叉面试</strong>。因为内推是在暑假，正在公司实习，说实话没有怎么准备，基本上就凭着以前看的一些东西加上运气的成分一路过去。我从研一开始参加阿里的招聘，感觉上来说还是很不错的，面试官人都很nice，感觉就像聊天一样。之前屡战屡败，所以屡败屡战，终于守得云开见月明，所以才会写这篇博客。来捋一捋到底阿里的面试问了些啥，为什么老是过不了。</p>
+<h2 id="第一轮技术电面">第一轮技术电面</h2><p>第一轮面试早上10点钟，正在写着代码，突然收到阿里的电话，心里感觉没啥底啊，说实话一点都没准备。悲剧的事之前投简历的时候用的简历还是一年前的简历，上面的项目都还是很久远之前的，非常囧。</p>
+<blockquote>
+<ul>
+<li>自我介绍</li>
+<li>指针和引用之前有啥区别么</li>
+<li>Java的基础知识</li>
+<li>Spring和mybatis遇到问题怎么解决</li>
+<li>JVM内存模型</li>
+<li>数据库的乐观锁与悲观锁</li>
+<li>红黑树和二叉平衡树</li>
+</ul>
+</blockquote>
+<p>基本上阿里的面试都是自我介绍，自我介绍一般就是擅长的一直说，不擅长的干脆不要说。自我介绍应该是挖坑给面试官跳的过程，但是一般都是我自己挖坑给自己跳了。自我介绍吧嗒吧嗒说了一通，好像他没听进去。我之前的项目都是C语言的项目，ARM嵌入式啥的，但是我已经很久不写C了都忘得差不多，无奈这个面试官仿佛对C很有认识啊，一直问我。所以上面第二个问题就是扯C与Java之间有什么区别。Java的基础知识比较细，什么是多态，这个比较基础；然后就是Java的集合框架，基本上是面试绕不开的，看看JDK的源码了解一下；Java的多线程技术，有没有用过线程池，为什么用线程池，什么时候不适合用线程池。。。。</p>
+<p>然后就是Java的框架，Spring和Mybatis基本上也就是用，遇到问题也就是在写的代码找错误，不太会调试源码，但是有一些错误还是和他交流了一下，比如Spring在用maven打包的时候在加载xml文件的时候会报找不到命名空间的异常，这种怎么解决的等等。</p>
+<p>JVM内存模型这部分没有问的太深入，没有涉及到具体调优的方式和参数，基本就是以下一些问题：</p>
+<blockquote>
+<ul>
+<li>类的加载器加载方式，双亲委派机制，如果要加载远程URL的class怎么做;</li>
+<li>JVM的内存模型，堆分为几个部分，为何会有s1和s2;;</li>
+<li>哪些GC方式，什么情况会触发full GC；</li>
+<li>你知道哪些OOM，就是堆，栈，DirectBuffer等；</li>
+<li>了解JVM对你的编程有什么帮助；</li>
+</ul>
+</blockquote>
+<p>数据库问了一些索引相关的和锁，但是只问了乐观锁和悲观锁的概念方面，什么是事务解释一下ACID，索引的数据结构，B+树，B+树的数据是存放在哪里的等等。还有用过什么数据库调优的方式，慢查询怎么看，用过哪些mysql的命令，分析sql的查询计划会得到哪些参数，分别是做什么的，这个不需要全部，可以参考<a href="http://www.cnitblog.com/aliyiyi08/archive/2008/09/09/48878.html" target="_blank" rel="external">explain查询计划</a>。</p>
+<p>最后就是数据结构，问我比较了解什么数据结构，问了红黑树的性质，五条性质，什么是平衡树，为什么要有平衡树，他有什么好处等等。</p>
+<p>一面主要是一些基础知识，阿里注重基础、潜力和兴趣，遇到不会的可以直接说不会，然后说说自己有什么想法。比如不知道数据库的乐观锁和悲观锁的实现机理，但是我知道Java中怎么实现的，所以就扯了一下。一面基本上都还OK，运气好碰到个nice的面试官都差不多的。</p>
+<h2 id="第二轮技术电面">第二轮技术电面</h2><p>第二轮面试应该是稍微牛一些的面试官，这个聊的Java内容比较多。才开始的时候就是说目前的实习，我在一家互联网公司实习，做的工作和该部门的比较类似，所以初始印象还不错。后面聊了一些技术问题，主要是介绍之前的项目，然后问了几个问题，有没有可以优化的地方或者考虑一下大数据高并发的场景。比如要实现一个用户登录的场景，该怎么实现，如何保证安全性；到第二步如果数据量非常大，比如过千万注册用户过亿注册用户该怎么办等等。之后问了我经常上哪些技术网站，用过哪些开源的库，哪里不错，有没有关心过源代码怎么实现的。基本上的问题就是为什么要用，能不能不用，用了有什么好处。</p>
+<p>之后同样问了JVM的相关问题，可见阿里对JVM有多钟爱。问了一下一个类如果只有一个int变量，这个类占多大得空间，这个当时答的是<strong>空对象大小(8byte)+int大小(4byte)</strong>，也没说对不对。问了Hashmap的实现原理，当hashmap冲突很大时怎么办，什么时候rehash以及如何rehash等。</p>
+<p>二面问的会深入一些，主要是项目的东西聊了比较多，看个人的状况了。项目没什么东西可能就会去深入问Java的一些基本知识吧。</p>
+<h2 id="第三轮技术电面">第三轮技术电面</h2><p>第三轮技术电面应该是部门主管面，在23:00打电话突然要面试，可见阿里加班之盛况。由于比较晚而且我在租的房子里没怎么听清，就随便聊了一下。问了一下比较关注的技术，和未来的想法。这部分感觉不太像技术型面试，聊了一下自己目前的技术状况，还有想做的事情和未来的计划。因为之前读过很多阿里的人写的有关Java开发的书，所以对阿里在Java方面的造诣很佩服，这个直说就OK，没有问太深入细节的技术问题。</p>
+<h2 id="HR面试">HR面试</h2><p>HR面试等了许久，都以为要挂了，突然HR晚上打电话面试。和HR聊了很多，因为实习一直在业务部门做技术，所以聊了一些业务和技术的问题。HR的问题是：</p>
+<blockquote>
+<ul>
+<li>目前的状况和未来的发展，是技术还是other;</li>
+<li>之后在公司可能会经常遇到业务的琐事大于技术方面的事，怎么看待；</li>
+<li>做了实习之后对自己的技术方面有什么帮助；</li>
+</ul>
+</blockquote>
+<p>基本上HR面试就是聊聊人生，总之就是坦诚一些吧，有什么说什么。最后问了一下HR面究竟会不会刷人，给的答案也比较模糊。说HR也是有刷人的资格，还是综合考虑你之前的面试情况等等。</p>
+<h2 id="第一轮交叉面试">第一轮交叉面试</h2><p>本来感觉HR面完已经没啥问题，可是突然在一个礼拜之后接到一个电话说还要面试，但是这一个礼拜压根也就没做这方面的准备啊。交叉面试就是不同部门的人来面试，时间不长，就问了几个问题：</p>
+<blockquote>
+<ul>
+<li>为什么要来阿里，未来的技术规划（我当时想说我选周杰伦。。）；</li>
+<li>在学习Java的过程中读过什么书；</li>
+<li>对什么数据结构比较熟悉，链表有什么操作；</li>
+<li>说说快速排序的思想，快速排序不适合于什么场景；</li>
+<li>Java的Object类有哪些方法；</li>
+<li>什么时候需要重写hashcode和equals方法，为何要重写。</li>
+</ul>
+</blockquote>
+<p>这部分都是比较基础的知识，但是说实话没想到还要交叉面试，而且这个面试官态度也比较高冷，最后也没问我还有什么问题就直接挂电话了。</p>
+<h2 id="第二轮交叉面试">第二轮交叉面试</h2><p>几天之后又接到一轮面试，心想这应该是最后一轮了吧。这个面试官态度和蔼，聊了一下开源技术之类的东东，说什么用Spring做些什么，IOC和AOP怎么实现的啊，声名式事务的源码看过么。然后问了点数据结构知识，平时上什么技术网站。就这样很愉快的结束了最后一轮面试，坐等消息，三天之后状态变为待同意拿offer。</p>
+<h2 id="总结">总结</h2><p>经过这么多轮的折腾终于收获offer，但是在签offer之后的几天就收到了阿里的缩招通知。在写这篇博客的时候还没有收到HR的通知，不知道之后会有什么波折。唯一运气不错的就是没有通过阿里之前的实习生面试，如果通过了可能也就拿不到校招的offer了。最后会不会入职阿里不好说，还有很多需要学习的东西。加油！！</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/09/06/hello-world/" itemprop="url">
                 Hello World
               </a>
@@ -271,151 +410,6 @@
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/08/16/hexo博客搭建/" itemprop="url">
-                hexo博客搭建
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-08-16T14:53:02+08:00" content="2015-08-16">
-            2015-08-16
-          </time>
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/08/16/hexo博客搭建/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/16/hexo博客搭建/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/08/15/新的开始/" itemprop="url">
-                新的开始
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-08-15T22:04:25+08:00" content="2015-08-15">
-            2015-08-15
-          </time>
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/08/15/新的开始/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/15/新的开始/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><ul>
-<li>开始</li>
-<li>我</li>
-<li>日记<br>categories: 日志</li>
-</ul>
-<hr>
-<p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-<p>通过下面的命令，就可以创建新文章<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\workspace\javascript\nodejs-hexo&#62;hexo new &#26032;&#30340;&#24320;&#22987;&#10;[info] File created at D:\workspace\javascript\nodejs-hexo\source\_posts\&#26032;&#30340;&#24320;&#22987;.md</span><br></pre></td></tr></table></figure></p>
-<p>谢谢。</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -450,21 +444,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
