@@ -205,6 +205,131 @@
           
           
             
+              <a class="post-title-link" href="/2015/09/15/2015年爱奇艺Java工程师内推面试经验/" itemprop="url">
+                2015年爱奇艺Java工程师内推面试经验
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-09-15T19:23:15+08:00" content="2015-09-15">
+            2015-09-15
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/面试/" itemprop="url" rel="index">
+                  <span itemprop="name">面试</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/09/15/2015年爱奇艺Java工程师内推面试经验/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/15/2015年爱奇艺Java工程师内推面试经验/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>今天是2015年9月15号，去爱奇艺上海参加内推的面试，之前问HR是哪个部门，HR说等面试的时候具体安排。但实际上内推的时候就已经决定了面试的部门了，去了服务云的项目组，听着他们主管介绍感觉项目组如此高端，以我的技术水平恐怕难以胜任该职位。事实上面试下来的感觉也并不是很好，估计也是那种被刷的吧。三轮技术型面试，全部是干货面试，没有谈人生谈理想的环节。其实每次面试的感觉都是，这特么是招应届毕业生么，然后过了一阵发现，原来我还没有达到应届毕业生的水平。所以在我面完爱奇艺之后，也顿时有这样的感觉。这次面试的是上海的岗位，问了一下他们的技术人员，好像上海这边做的内容和北京那边的内容都一样，因为上海这边收购了PPS，所以对PPS的内部员工做了整合。面试结果还没有出来，趁着记忆还清楚，回忆一下面试的内容。</p>
+<h2 id="Round-1">Round-1</h2><p>这一轮应该是一个工作不久的工程师，从面试题就可以看出还有以前找工作的面试题的套路。这部分基本与找工作的常规题类似，可惜准备不够充分还是有很多题目都不太会。</p>
+<ol>
+<li>实现Java中<code>Double.parseDouble(String str)</code>方法，这部分代码在JDK中没有实现代码，因为<code>FloatingDecimal</code>是sun公司的私有类，看不到具体的实现代码。但是面试的时候也没要做一些异常判断，就实现最简单的字符串，里面只有小数点和数字的。</li>
+<li>接下来是问了Java中堆内存的组成部分，包含那几个部分，在GC的时候对象是如何变化的。还有一些运行参数<code>-xms</code>，<code>-xmn</code>，<code>-xmx</code>的意义等等。还问了一下Java的基础题，Object类有哪些方法等。</li>
+<li><p>剩下的都是算法题，内容比较杂。</p>
+<blockquote>
+<ul>
+<li>判断链表是否有环，以及有环时如何找到交点；</li>
+<li>利用两个栈实现队列，在倒栈时同时有数据插入该怎么处理；</li>
+<li>有一堆重量不一的石子要放入5个框内，如何放置可以保证框内石子重量最近似；</li>
+<li>有m行n列的数据，每列选取一个数字，找出一组所有列的数字和mod 7最小。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>然后还有一些计算机网络的知识，如TCP协议的wait_closed和time_closed的区别，arp协议在哪一层，网络的五层分别传输的都是什么内容等等。</p>
+</li>
+</ol>
+<p>第一轮时间比较久，可能是我的实习经历和他们的工作并不是很相关吧。至于其他的知识，面试官说在他们部门，像hadoop，Spring这些都是默认会使用的，所有不需要问了。总得来说一面的问题都是面试常见的题目，还是技术太渣，准备不够，答的一般吧。</p>
+<h2 id="Round-2">Round-2</h2><p>第二轮面试仿佛应该是小部门的主管吧，年龄比较深沉，这里问的问题会比较偏开发一些，主要是Java的基础知识，可能我对EE不是很熟，问的都是SE的内容。</p>
+<ol>
+<li>你对SE比较熟还是EE比较熟啊；</li>
+<li>ArrayList和LinkedList的区别；</li>
+<li>HashMap和Hashtable和CocurrentHashMap的之间的用法；</li>
+<li>TCP的三次握手和四次挥手；</li>
+<li>写一个快速排序；</li>
+<li>SpringMVC的大概转发机制；</li>
+<li>对hadoop有哪些了解；</li>
+<li>未来的职业发展规划等等。</li>
+</ol>
+<p>有印象的就是这些内容，可能还有一些不太记得了。和二面的面试官聊了一下爱奇艺的工作氛围，他之前在SAP做，感觉爱奇艺会比外企要更好一些，当然上下班打卡显得不是很open，但是觉得还OK，加班也有补贴，听着还不错啊，至少在互联网还不错啊。</p>
+<h2 id="Round-3">Round-3</h2><p>第三轮是最惨烈的一轮面试，这个是大部门的leader，我以为可以谈谈人生聊聊理想的层次了。还是问了我一个题目。问了很多技术层面的，但是没聊Java本身。</p>
+<blockquote>
+<ul>
+<li>计算机网络五层分别做了什么；</li>
+<li>操作系统进程间如何通信；</li>
+<li>实习中做了些什么，画一下技术架构之类的；</li>
+<li>一道大数据问题，1G的内存如何处理4G文件的数据，将数据排序。</li>
+</ul>
+</blockquote>
+<p>第三轮最后一个问题的时候，想了很久，原来对这种大数据的题目没有太放在心上，结果这次吃了亏。可能这次的面试最大的问题就是在第三轮这里吧。</p>
+<h2 id="总结">总结</h2><p>整体感觉下来，可能爱奇艺的这个服务云的部门是偏基础架构的，问的问题都比较深入，对于应用层面的内容并不是很多。最后问了我是想从事业务级的开发还是技术型的开发，这个也是我现在所纠结的问题，希望尽快能有个idea吧。</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/09/14/Java设计模式学习（一）——单例模式/" itemprop="url">
                 Java设计模式学习（一） - 单例模式
               </a>
@@ -636,7 +761,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
