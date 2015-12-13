@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="Java,面试," />
+  <meta name="keywords" content="论文," />
 
 
 
@@ -39,19 +39,16 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="我参加2015年阿里巴巴校招的内推面试拿到Java研发工程师的offer，运气比较好的是恰好发offer的时候还没有通知缩招，所以拿到offer大部分靠运气吧。在这里主要是记录一下内推阿里面试的一些问题，据说明年阿里的校招会更加的凶残，可能面试会更加严格。
-今年阿里的面试比较多，基本上都是4-6轮，我恰好是算多的，三轮部门技术面+一轮HR面+两轮交叉面试。因为内推是在暑假，正在公司实习，说实话没有">
+<meta name="description" content="0 引言本文提出一种基于波束成形天线的网络时间同步算法，节点可根据邻居节点方向动态切换天线朝向，相比定向天线可更高效完成同步。本文的同步算法通过选举、精同步以及同步维护三阶段解决基于波束成形天线的多跳网络时间同步问题。选举阶段优化FTSP算法选举逻辑，选举度最大节点作为网络时间参考节点，选举参考节点同时节点与网络中时间最快的节点同步，并构建以参考节点为根的生成树层级网络。精同步阶段以参考节点为时间">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2015年阿里面试记录">
-<meta property="og:url" content="http://www.holen.cc/2015/09/06/2015年阿里面试记录/index.html">
+<meta property="og:title" content="基于波束成形天线的时间同步算法">
+<meta property="og:url" content="http://www.holen.cc/2015/12/13/基于波束成形天线的时间同步算法/index.html">
 <meta property="og:site_name" content="Holen博客">
-<meta property="og:description" content="我参加2015年阿里巴巴校招的内推面试拿到Java研发工程师的offer，运气比较好的是恰好发offer的时候还没有通知缩招，所以拿到offer大部分靠运气吧。在这里主要是记录一下内推阿里面试的一些问题，据说明年阿里的校招会更加的凶残，可能面试会更加严格。
-今年阿里的面试比较多，基本上都是4-6轮，我恰好是算多的，三轮部门技术面+一轮HR面+两轮交叉面试。因为内推是在暑假，正在公司实习，说实话没有">
-<meta property="og:updated_time" content="2015-09-06T13:53:09.090Z">
+<meta property="og:description" content="0 引言本文提出一种基于波束成形天线的网络时间同步算法，节点可根据邻居节点方向动态切换天线朝向，相比定向天线可更高效完成同步。本文的同步算法通过选举、精同步以及同步维护三阶段解决基于波束成形天线的多跳网络时间同步问题。选举阶段优化FTSP算法选举逻辑，选举度最大节点作为网络时间参考节点，选举参考节点同时节点与网络中时间最快的节点同步，并构建以参考节点为根的生成树层级网络。精同步阶段以参考节点为时间">
+<meta property="og:updated_time" content="2015-12-13T10:29:18.252Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2015年阿里面试记录">
-<meta name="twitter:description" content="我参加2015年阿里巴巴校招的内推面试拿到Java研发工程师的offer，运气比较好的是恰好发offer的时候还没有通知缩招，所以拿到offer大部分靠运气吧。在这里主要是记录一下内推阿里面试的一些问题，据说明年阿里的校招会更加的凶残，可能面试会更加严格。
-今年阿里的面试比较多，基本上都是4-6轮，我恰好是算多的，三轮部门技术面+一轮HR面+两轮交叉面试。因为内推是在暑假，正在公司实习，说实话没有">
+<meta name="twitter:title" content="基于波束成形天线的时间同步算法">
+<meta name="twitter:description" content="0 引言本文提出一种基于波束成形天线的网络时间同步算法，节点可根据邻居节点方向动态切换天线朝向，相比定向天线可更高效完成同步。本文的同步算法通过选举、精同步以及同步维护三阶段解决基于波束成形天线的多跳网络时间同步问题。选举阶段优化FTSP算法选举逻辑，选举度最大节点作为网络时间参考节点，选举参考节点同时节点与网络中时间最快的节点同步，并构建以参考节点为根的生成树层级网络。精同步阶段以参考节点为时间">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -61,7 +58,7 @@
   };
 </script>
 
-  <title> 2015年阿里面试记录 | Holen博客 </title>
+  <title> 基于波束成形天线的时间同步算法 | Holen博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -207,7 +204,7 @@
           
           
             
-              2015年阿里面试记录
+              基于波束成形天线的时间同步算法
             
           
         </h1>
@@ -216,8 +213,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-06T19:57:27+08:00" content="2015-09-06">
-            2015-09-06
+          <time itemprop="dateCreated" datetime="2015-12-13T18:19:36+08:00" content="2015-12-13">
+            2015-12-13
           </time>
         </span>
 
@@ -226,8 +223,8 @@
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/面试/" itemprop="url" rel="index">
-                  <span itemprop="name">面试</span>
+                <a href="/categories/论文/" itemprop="url" rel="index">
+                  <span itemprop="name">论文</span>
                 </a>
               </span>
 
@@ -242,8 +239,8 @@
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/09/06/2015年阿里面试记录/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/06/2015年阿里面试记录/" itemprop="commentsCount"></span>
+              <a href="/2015/12/13/基于波束成形天线的时间同步算法/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/13/基于波束成形天线的时间同步算法/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -257,62 +254,12 @@
       
 
       
-        <span itemprop="articleBody"><p>我参加2015年阿里巴巴校招的内推面试拿到Java研发工程师的offer，运气比较好的是恰好发offer的时候还没有通知缩招，所以拿到offer大部分靠运气吧。在这里主要是记录一下内推阿里面试的一些问题，据说明年阿里的校招会更加的凶残，可能面试会更加严格。</p>
-<p>今年阿里的面试比较多，基本上都是4-6轮，我恰好是算多的，<strong>三轮部门技术面+一轮HR面+两轮交叉面试</strong>。因为内推是在暑假，正在公司实习，说实话没有怎么准备，基本上就凭着以前看的一些东西加上运气的成分一路过去。我从研一开始参加阿里的招聘，感觉上来说还是很不错的，面试官人都很nice，感觉就像聊天一样。之前屡战屡败，所以屡败屡战，终于守得云开见月明，所以才会写这篇博客。来捋一捋到底阿里的面试问了些啥，为什么老是过不了。</p>
-<h2 id="第一轮技术电面">第一轮技术电面</h2><p>第一轮面试早上10点钟，正在写着代码，突然收到阿里的电话，心里感觉没啥底啊，说实话一点都没准备。悲剧的事之前投简历的时候用的简历还是一年前的简历，上面的项目都还是很久远之前的，非常囧。</p>
-<blockquote>
-<ul>
-<li>自我介绍</li>
-<li>指针和引用之前有啥区别么</li>
-<li>Java的基础知识</li>
-<li>Spring和mybatis遇到问题怎么解决</li>
-<li>JVM内存模型</li>
-<li>数据库的乐观锁与悲观锁</li>
-<li>红黑树和二叉平衡树</li>
-</ul>
-</blockquote>
-<p>基本上阿里的面试都是自我介绍，自我介绍一般就是擅长的一直说，不擅长的干脆不要说。自我介绍应该是挖坑给面试官跳的过程，但是一般都是我自己挖坑给自己跳了。自我介绍吧嗒吧嗒说了一通，好像他没听进去。我之前的项目都是C语言的项目，ARM嵌入式啥的，但是我已经很久不写C了都忘得差不多，无奈这个面试官仿佛对C很有认识啊，一直问我。所以上面第二个问题就是扯C与Java之间有什么区别。Java的基础知识比较细，什么是多态，这个比较基础；然后就是Java的集合框架，基本上是面试绕不开的，看看JDK的源码了解一下；Java的多线程技术，有没有用过线程池，为什么用线程池，什么时候不适合用线程池。。。。</p>
-<p>然后就是Java的框架，Spring和Mybatis基本上也就是用，遇到问题也就是在写的代码找错误，不太会调试源码，但是有一些错误还是和他交流了一下，比如Spring在用maven打包的时候在加载xml文件的时候会报找不到命名空间的异常，这种怎么解决的等等。</p>
-<p>JVM内存模型这部分没有问的太深入，没有涉及到具体调优的方式和参数，基本就是以下一些问题：</p>
-<blockquote>
-<ul>
-<li>类的加载器加载方式，双亲委派机制，如果要加载远程URL的class怎么做;</li>
-<li>JVM的内存模型，堆分为几个部分，为何会有s1和s2;;</li>
-<li>哪些GC方式，什么情况会触发full GC；</li>
-<li>你知道哪些OOM，就是堆，栈，DirectBuffer等；</li>
-<li>了解JVM对你的编程有什么帮助；</li>
-</ul>
-</blockquote>
-<p>数据库问了一些索引相关的和锁，但是只问了乐观锁和悲观锁的概念方面，什么是事务解释一下ACID，索引的数据结构，B+树，B+树的数据是存放在哪里的等等。还有用过什么数据库调优的方式，慢查询怎么看，用过哪些mysql的命令，分析sql的查询计划会得到哪些参数，分别是做什么的，这个不需要全部，可以参考<a href="http://www.cnitblog.com/aliyiyi08/archive/2008/09/09/48878.html" target="_blank" rel="external">explain查询计划</a>。</p>
-<p>最后就是数据结构，问我比较了解什么数据结构，问了红黑树的性质，五条性质，什么是平衡树，为什么要有平衡树，他有什么好处等等。</p>
-<p>一面主要是一些基础知识，阿里注重基础、潜力和兴趣，遇到不会的可以直接说不会，然后说说自己有什么想法。比如不知道数据库的乐观锁和悲观锁的实现机理，但是我知道Java中怎么实现的，所以就扯了一下。一面基本上都还OK，运气好碰到个nice的面试官都差不多的。</p>
-<h2 id="第二轮技术电面">第二轮技术电面</h2><p>第二轮面试应该是稍微牛一些的面试官，这个聊的Java内容比较多。才开始的时候就是说目前的实习，我在一家互联网公司实习，做的工作和该部门的比较类似，所以初始印象还不错。后面聊了一些技术问题，主要是介绍之前的项目，然后问了几个问题，有没有可以优化的地方或者考虑一下大数据高并发的场景。比如要实现一个用户登录的场景，该怎么实现，如何保证安全性；到第二步如果数据量非常大，比如过千万注册用户过亿注册用户该怎么办等等。之后问了我经常上哪些技术网站，用过哪些开源的库，哪里不错，有没有关心过源代码怎么实现的。基本上的问题就是为什么要用，能不能不用，用了有什么好处。</p>
-<p>之后同样问了JVM的相关问题，可见阿里对JVM有多钟爱。问了一下一个类如果只有一个int变量，这个类占多大得空间，这个当时答的是<strong>空对象大小(8byte)+int大小(4byte)</strong>，也没说对不对。问了Hashmap的实现原理，当hashmap冲突很大时怎么办，什么时候rehash以及如何rehash等。</p>
-<p>二面问的会深入一些，主要是项目的东西聊了比较多，看个人的状况了。项目没什么东西可能就会去深入问Java的一些基本知识吧。</p>
-<h2 id="第三轮技术电面">第三轮技术电面</h2><p>第三轮技术电面应该是部门主管面，在23:00打电话突然要面试，可见阿里加班之盛况。由于比较晚而且我在租的房子里没怎么听清，就随便聊了一下。问了一下比较关注的技术，和未来的想法。这部分感觉不太像技术型面试，聊了一下自己目前的技术状况，还有想做的事情和未来的计划。因为之前读过很多阿里的人写的有关Java开发的书，所以对阿里在Java方面的造诣很佩服，这个直说就OK，没有问太深入细节的技术问题。</p>
-<h2 id="HR面试">HR面试</h2><p>HR面试等了许久，都以为要挂了，突然HR晚上打电话面试。和HR聊了很多，因为实习一直在业务部门做技术，所以聊了一些业务和技术的问题。HR的问题是：</p>
-<blockquote>
-<ul>
-<li>目前的状况和未来的发展，是技术还是other;</li>
-<li>之后在公司可能会经常遇到业务的琐事大于技术方面的事，怎么看待；</li>
-<li>做了实习之后对自己的技术方面有什么帮助；</li>
-</ul>
-</blockquote>
-<p>基本上HR面试就是聊聊人生，总之就是坦诚一些吧，有什么说什么。最后问了一下HR面究竟会不会刷人，给的答案也比较模糊。说HR也是有刷人的资格，还是综合考虑你之前的面试情况等等。</p>
-<h2 id="第一轮交叉面试">第一轮交叉面试</h2><p>本来感觉HR面完已经没啥问题，可是突然在一个礼拜之后接到一个电话说还要面试，但是这一个礼拜压根也就没做这方面的准备啊。交叉面试就是不同部门的人来面试，时间不长，就问了几个问题：</p>
-<blockquote>
-<ul>
-<li>为什么要来阿里，未来的技术规划（我当时想说我选周杰伦。。）；</li>
-<li>在学习Java的过程中读过什么书；</li>
-<li>对什么数据结构比较熟悉，链表有什么操作；</li>
-<li>说说快速排序的思想，快速排序不适合于什么场景；</li>
-<li>Java的Object类有哪些方法；</li>
-<li>什么时候需要重写hashcode和equals方法，为何要重写。</li>
-</ul>
-</blockquote>
-<p>这部分都是比较基础的知识，但是说实话没想到还要交叉面试，而且这个面试官态度也比较高冷，最后也没问我还有什么问题就直接挂电话了。</p>
-<h2 id="第二轮交叉面试">第二轮交叉面试</h2><p>几天之后又接到一轮面试，心想这应该是最后一轮了吧。这个面试官态度和蔼，聊了一下开源技术之类的东东，说什么用Spring做些什么，IOC和AOP怎么实现的啊，声名式事务的源码看过么。然后问了点数据结构知识，平时上什么技术网站。就这样很愉快的结束了最后一轮面试，坐等消息，三天之后状态变为待同意拿offer。</p>
-<h2 id="总结">总结</h2><p>经过这么多轮的折腾终于收获offer，但是在签offer之后的几天就收到了阿里的缩招通知。在写这篇博客的时候还没有收到HR的通知，不知道之后会有什么波折。唯一运气不错的就是没有通过阿里之前的实习生面试，如果通过了可能也就拿不到校招的offer了。最后会不会入职阿里不好说，还有很多需要学习的东西。加油！！</p>
+        <span itemprop="articleBody"><h1 id="0_引言">0 引言</h1><p>本文提出一种基于波束成形天线的网络时间同步算法，节点可根据邻居节点方向动态切换天线朝向，相比定向天线可更高效完成同步。本文的同步算法通过选举、精同步以及同步维护三阶段解决基于波束成形天线的多跳网络时间同步问题。选举阶段优化FTSP算法选举逻辑，选举度最大节点作为网络时间参考节点，选举参考节点同时节点与网络中时间最快的节点同步，并构建以参考节点为根的生成树层级网络。精同步阶段以参考节点为时间基准，经过层级传播信息完成全网节点同步。同步维护过程将网络分簇传播节点时间信息，直至簇内节点时间一致收敛，同时簇间节点成对时间交换同步，相比分布式同步具有更高的效率与更低的通信开销。</p>
+<h1 id="1_时间同步算法">1 时间同步算法</h1><p>本文提出的算法是三阶段协议，其中选举阶段选举网络参考节点，并将分布式网络构建成以参考节点为根的层级网络拓扑；同步阶段以参考节点时钟为基准，以选举阶段构建的层级结构为基础同步全网节点；同步维护阶段将网络分簇迭代节点时钟保持网络节点同步状态。本算法中节点预先随机定义ID号且节点本地时钟异步。</p>
+<h2 id="1-1_选举阶段">1.1 选举阶段</h2><p>由于波束成形天线的特殊性，可根据邻居节点天线位置动态切换收发方向，并且波束成形天线为半双工模式，同一时刻只能处于接收或发送状态。因此本文将选举阶段分为全向发现与定向选举两个子过程，全向发现过程搜索邻居节点方向；定向选举过程规划异步情况下节点收发状态及选举时间参考节点。此外选举阶段节点本地存储邻居节点方向信息表，节点所在层级，参考节点ID以及参考节点度数等信息。</p>
+<h3 id="1-1-1_全向发现过程">1.1.1 全向发现过程</h3><p>波束成形天线工作于全向状态，此时波束成形天线类似全向天线，但无法数据通信，仅能通过DOA估计[7]获得天线来波方向。节点发送接收Training序列发现邻居节点方向，保存邻居节点方向信息表。全向发现过程无法获得节点具体信息，仅可通过DOA估计得知天线来波方向进而获得邻居节点位置信息。此处假设节点周围邻居节点较分散，不存在多个节点位于同一节点的同一波束方向，否则将影响DOA估计的准确性。全向发现过程完成后，节点维护邻居节点方向信息表，此时天线进入定向选举过程，完成网络参考时间节点选举与层级结构构建。</p>
+<h3 id="1-1-2_定向选举过程">1.1.2 定向选举过程</h3><p>我们在定向选举过程规划节点收发状态，首先定义两种基本时间单位：时隙与周期。时隙是定向选举过程节点通信的基本单位，节点时隙长度相同，且一个时隙足以发送数据包。一个周期开始，节点从接收与发送状态中随机选择，即节点以$P_T$的概率选择发送，以$1-P_T$的概率选择接收，其中发送状态节点在一周期内有$T_1$发送时隙，可发送选举数据包，有$R_1$接收时隙，接收反馈的应答数据包；接收状态节点在一个周期内有$R_2$时隙接收选举数据包，有$T_2$时隙发送应答数据包，且$T_1+R_1=R_2+T_2$。<br>节点状态选择完毕，发送状态节点从邻居方向信息表中随机选择方向，在一周期内保持方向不变，每个时隙持续发送选举数据包。接收状态节点分别于所有接收方向停留至少超过一个时隙才可确保接收数据包，因此本算法中，设定接收状态节点在每个接收方向停留两个时隙。发送状态节点一段时间后进入接收时隙，而此时接收状态节点将切换至发送时隙快速回复应答数据包，因此一周期内节点通信可完成收发两次交互。<br>选举阶段数据包包含节点ID，节点时钟信息，该节点保存的根结点ID，根结点度数，以及节点剩余多少时隙进入接收时隙。同时为优化精同步阶段节点方向选择，选举数据包中还包含节点层级信息。<br>接收节点接收选举数据包依照相应信息更新根节点，构建层级并粗同步。网络节点本地存储其所知的根节点ID，根节点度数及上一层级节点方向（默认为邻居信息表中随机方向）。接收节点接收解析选举数据包，若其本地根节点度数小于数据包中根节点度数，则更新接收节点本地根节点ID与度数；若两者度数相同则比较选择ID更小的为根节点；接收节点更新根节点信息同时修改接收节点所在层级，即为发送节点层级加1，并设置发送节点为上一层级节点记录其方向。此外若数据包中时钟信息快于本地时钟则更新本地时钟信息。<br>接收节点更新数据完毕后，等待发送节点进入接收时隙向其快速回复应答数据包，发送节点接收并解析应答数据包，按照上述接收节点相同过程更新根节点与层级信息发送节点处理应答数据包流程同理。</p>
+<h2 id="同步阶段">同步阶段</h2><p>选举阶段完成，网络已选举参考节点，并成功构建以参考节点为根的生成树层级网络。选举阶段节点与网络中时钟最快节点粗同步，同步精度较差，因此精同步阶段以层级结构为基础完成网络时间高精度同步。精同步阶段参考时间节点处于接收状态，其余节点处于发送状态，且发送节点天线朝向上一层级节点方向。发送节点A首先向上一级节点发送请求数据包，请求数据包包含发送节点ID，发送时间$T_1$以及距离进入接收时隙剩余时隙数R。<br>参考节点B在$T_2$时刻接收发送节点请求数据包，从而有<br>$$T_2=T_1+d+σ$$<br>其中d指节点A到参考结点B的时延，σ指节点A与节点B的时钟偏差。参考结点B在$T_3$时刻快速回复应答数据包，节点A在$T_4$时刻接收该数据包。应答数据包包含参考节点B的ID信息，节点B接收节点A发送同步请求数据包时间T_2以及节点B回复应答数据包时刻$T_3$。<br>发送节点A在$T_4$时刻接收参考节点发送的请求数据包，所以有<br>$$T_4=T_3+d-σ$$<br>假设节点A到头结点B之间的往返时延相同，时间偏差保持相对不变。因此可计算得出：<br>$$σ=((T_2-T_1 )-(T_4-T_3))/2$$<br>$$d=((T_2-T_1 )+(T_4-T_3))/2$$<br>据上面公式计算节点间时钟偏移与传输延迟，并调整自身时钟至同步源时钟。节点A与根结点同步后，节点A即作为参考时间节点继续与下一层级节点同步，最终完成以参考节点为根的全网节点时间同步。</p>
 </span>
       
     </div>
@@ -321,9 +268,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Java/" rel="tag">#Java</a>
-          
-            <a href="/tags/面试/" rel="tag">#面试</a>
+            <a href="/tags/论文/" rel="tag">#论文</a>
           
         </div>
       
@@ -332,13 +277,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/09/08/字符串排列组合——Java实现/" rel="prev">字符串排列组合——Java实现</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/09/06/hello-world/" rel="next">Hello World</a>
+              <a href="/2015/09/15/2015年爱奇艺Java工程师内推面试经验/" rel="next">2015年爱奇艺Java工程师内推面试经验</a>
             
           </div>
         </div>
@@ -363,8 +306,8 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2015/09/06/2015年阿里面试记录/"
-                   data-title="2015年阿里面试记录" data-url="http://www.holen.cc/2015/09/06/2015年阿里面试记录/">
+              <div class="ds-thread" data-thread-key="2015/12/13/基于波束成形天线的时间同步算法/"
+                   data-title="基于波束成形天线的时间同步算法" data-url="http://www.holen.cc/2015/12/13/基于波束成形天线的时间同步算法/">
               </div>
             
           </div>
@@ -446,7 +389,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一轮技术电面"><span class="nav-number">1.</span> <span class="nav-text">第一轮技术电面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二轮技术电面"><span class="nav-number">2.</span> <span class="nav-text">第二轮技术电面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三轮技术电面"><span class="nav-number">3.</span> <span class="nav-text">第三轮技术电面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HR面试"><span class="nav-number">4.</span> <span class="nav-text">HR面试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一轮交叉面试"><span class="nav-number">5.</span> <span class="nav-text">第一轮交叉面试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二轮交叉面试"><span class="nav-number">6.</span> <span class="nav-text">第二轮交叉面试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0_引言"><span class="nav-number">1.</span> <span class="nav-text">0 引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1_时间同步算法"><span class="nav-number">2.</span> <span class="nav-text">1 时间同步算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1_选举阶段"><span class="nav-number">2.1.</span> <span class="nav-text">1.1 选举阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1_全向发现过程"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1.1 全向发现过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-2_定向选举过程"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.1.2 定向选举过程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同步阶段"><span class="nav-number">2.2.</span> <span class="nav-text">同步阶段</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
